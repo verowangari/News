@@ -48,3 +48,11 @@ main.py
 
 ## Known Bugs
 - There are no known bugs
+
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Contact Information 
+
+If you have any question or contributions, please email me at [verowangari34@gmail.com]
+© 2022 Veronica Muriithi
