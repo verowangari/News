@@ -2,7 +2,7 @@ import requests
 from decouple import config
 
 NEWS_API_KEY = config('NEWS_API_KEY')
-COUNTRY = 'in'
+COUNTRY = 'us'
 
 
 def get_latest_news():
