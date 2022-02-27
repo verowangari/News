@@ -5,4 +5,8 @@ class Config(object):
     TESTING = False
     CSRF_ENABLED = True
 
+class ProductionConfig(Config):
+    DEBUG = False
+    MAIL_DEBUG = False
+
 
