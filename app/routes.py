@@ -15,3 +15,4 @@ def news_headlines():
     news_articles = get_latest_news()
     return render_template("news.html", news_articles=news_articles)# render news.html file and passed the news_articles list.
 
+
