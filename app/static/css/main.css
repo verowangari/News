@@ -13,3 +13,8 @@ span{
     color: white;
     align-content: center;
 }
+footer{
+    background-color: black;
+    color: red;
+    text-decoration: none;
+}
