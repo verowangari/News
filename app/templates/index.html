@@ -12,12 +12,18 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!-- css link for style.css -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+
 
     <title>Hello, {{ user.name }}!</title>
   </head>
   <body>
     <h1>Hello, {{ user.name }}!</h1>
-    <a class="btn btn-danger text-center" href='{{ url_for( "news_headlines"  ) }}'>Click to View Latest Headlines </a>
+    <h2> Welcome to <span> Flask-News</span></h2>
+    <img src="{{ url_for('static', filename='images/design-image_2215460.jpg') }}" alt="">
+    <p>Events as they happen!</p>
+    <a class="btn  text-center" href='{{ url_for( "news_headlines"  ) }}'>Click to View Latest Headlines </a>
     <!-- Navbar -->
 
 
