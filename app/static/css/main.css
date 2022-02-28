@@ -1,0 +1,15 @@
+.jumbotron{ text-align: center;
+color: white;
+background-color: black;
+border: .5px solid red;}
+span{
+    color: red;
+}
+.jumbotron p{
+    color: red;
+}
+#cardsbutton{
+    background-color: red;
+    color: white;
+    align-content: center;
+}

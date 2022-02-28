@@ -59,24 +59,22 @@
     
     <!-- <h1 class="text-center mt-4 mb-5">Top Headlines Across the World</h1> -->
     <div class="jumbotron">
-      <h1 class="display-4">Hello, Welcome to Flask-News</h1>
+      <h1 class="display-4">Hello, Welcome to <span>Flask-News</span></h1>
       <p class="lead">This is where you get news from various articles and sources across the world, on diverse Categories</p>
-      <hr class="my-4">
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </div>
+     
+      </div>
     <div class="row mt-5">
       <div class="col-md-2"></div>
       <div class="col-md-8">
         <div class="row">
           {% for news in news_articles %}
           <div class="col-md-4 mb-5">
-            <div class="card" style="width: 18rem">
+            <div class="card" style="width: 23rem">
               <img src="{{ news.urlToImage }}" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">{{ news.title }}</h5>
                 <p class="card-text">{{ news.description }}</p>
-                <a href="{{ news.url }}" class="btn btn-primary">Read More</a>
+                <a href="{{ news.url }}" class="btn " id="cardsbutton">Read More</a>
               </div>
             </div>
           </div>
