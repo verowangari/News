@@ -18,7 +18,8 @@
     <title>Top Headlines Across the World</title>
   </head>
   <body>
-    <!-- Navbar -->
+    <div class="container-fluid" style="background-color: #000;">
+      <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Flask-News</a>
@@ -63,23 +64,25 @@
       <p class="lead">This is where you get news from various articles and sources across the world, on diverse Categories</p>
      
       </div>
-    <div class="container-fluid landing">
+    <div class="container-fluid landing" id="sameheight" >
       <div class="row mt-5">
         <div class="col-md-2"></div>
         <div class="col-md-8">
           <div class="row">
             {% for news in news_articles %}
-            <div class="col-md-4 mb-5">
+            <div class="col-md-4 mb-5 d-flex justify-content-center">
               <div class="card" style="width: 23rem">
-                <img src="{{ news.urlToImage }}" class="card-img-top" alt="..." />
+                <img src="{{ news.urlToImage }}" class="card-img-top image-fluid" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">{{ news.title }}</h5>
                   <p class="card-text">{{ news.description }}</p>
-                  <a href=""> <p class="card-text">Source: {{ news.source.name }}</p></a>
                   
-                    <p class="card-text published"> Author: {{news.author}}</p>
+                  
+                    
                 
                 <div class="card-footer">
+                  <a href=""> <p class="card-text">Source: {{ news.source.name }}</p></a>
+                  <p class="card-text published"> Author: {{news.author}}</p>
                   <p class="card-text published"> Date Published: {{news.publishedAt}}</p>
               </div  >
                 <div class="button1">   <a href="{{ news.url }}" class="btn " id="cardsbutton">Read More</a></div>
@@ -151,5 +154,6 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    </div>
   </body>
 </html>
