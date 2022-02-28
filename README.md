@@ -18,6 +18,7 @@ The application requires the following installations to operate:
 - decouple
 - flask
 - requests
+- gunicorn
 
 ## Technologies Used
 - Python 3.8.10
