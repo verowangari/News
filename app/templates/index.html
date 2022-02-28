@@ -19,8 +19,8 @@
     <title>Hello, {{ user.name }}!</title>
   </head>
   <body>
-    <h1>Hello, {{ user.name }}!</h1>
-    <h2> Welcome to <span> Flask-News</span></h2>
+    <h1>Hello, {{ user.name }}!</h1> <br>
+    <h2> Welcome to <span> Flask-News</span></h2> <br>
     <img src="{{ url_for('static', filename='images/design-image_2215460.jpg') }}" alt="">
     <p>Events as they happen!</p>
     <a class="btn  text-center" href='{{ url_for( "news_headlines"  ) }}'>Click to View Latest Headlines </a>
