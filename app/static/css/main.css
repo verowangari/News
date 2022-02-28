@@ -11,7 +11,11 @@ span{
 #cardsbutton{
     background-color: red;
     color: white;
-    align-content: center;
+    margin: auto;
+}
+.button1{
+    display: flex;
+    margin-top: 5px;
 }
 footer{
     background-color: black;
@@ -25,3 +29,29 @@ a{
     color: red;
     text-decoration: none;
 }
+.landing {
+    margin-top: 100px;
+}
+.img {
+    width: 100%;
+}
+.page-footer {
+    padding: 0.75rem 1.25rem;
+    padding-bottom: 0px;
+    border-radius: 0px 0px 10px 10px;
+}
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    color: #000;
+    background-color: #fff;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+

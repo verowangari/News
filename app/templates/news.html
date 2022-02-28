@@ -63,32 +63,35 @@
       <p class="lead">This is where you get news from various articles and sources across the world, on diverse Categories</p>
      
       </div>
-    <div class="row mt-5">
-      <div class="col-md-2"></div>
-      <div class="col-md-8">
-        <div class="row">
-          {% for news in news_articles %}
-          <div class="col-md-4 mb-5">
-            <div class="card" style="width: 23rem">
-              <img src="{{ news.urlToImage }}" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">{{ news.title }}</h5>
-                <p class="card-text">{{ news.description }}</p>
+    <div class="container-fluid landing">
+      <div class="row mt-5">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div class="row">
+            {% for news in news_articles %}
+            <div class="col-md-4 mb-5">
+              <div class="card" style="width: 23rem">
+                <img src="{{ news.urlToImage }}" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">{{ news.title }}</h5>
+                  <p class="card-text">{{ news.description }}</p>
+                  <a href=""> <p class="card-text">Source: {{ news.source.name }}</p></a>
+                  
+                    <p class="card-text published"> Author: {{news.author}}</p>
+                
                 <div class="card-footer">
-                  <p class="card-text published"> Author: {{news.author}}</p>
+                  <p class="card-text published"> Date Published: {{news.publishedAt}}</p>
+              </div  >
+                <div class="button1">   <a href="{{ news.url }}" class="btn " id="cardsbutton">Read More</a></div>
+                </div>
+                
               </div>
-              <div class="card-footer">
-                <p class="card-text published"> Date Published: {{news.publishedAt}}</p>
             </div>
-                <a href="{{ news.url }}" class="btn " id="cardsbutton">Read More</a>
-              </div>
-              
-            </div>
+            {% endfor %}
           </div>
-          {% endfor %}
         </div>
+        <div class="col-md-2"></div>
       </div>
-      <div class="col-md-2"></div>
     </div>
     
   <!-- Footer -->
@@ -101,7 +104,7 @@
     <ul class="list-unstyled list-inline text-center">
       <li class="list-inline-item">
         <a class="btn-floating btn-fb mx-1">
-          <i class="fab fa-facebook-f">Facebook </i>
+          <i class="fab fa-facebook-f"> </i>
         </a>
       </li>
       <li class="list-inline-item">
