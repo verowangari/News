@@ -16,5 +16,12 @@ span{
 footer{
     background-color: black;
     color: red;
+    
+}
+.fab{
+    color: red;
+}
+a{
+    color: red;
     text-decoration: none;
 }
