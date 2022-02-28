@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding-top:40px ;
+}
+body{
+    background-color: #000;
+    color: white;
+    text-align: center;
+    line-height: 4rem;
+}
+.btn{
+    background-color: red;
+    color: white;
+    font-weight: 500;
+}
+span{
+    color: red;
+}
+img{
+    max-height: 18em;
+}
+a{
+    display: block;
+}
