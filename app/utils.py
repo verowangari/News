@@ -18,5 +18,5 @@ def get_sources():
     '''
     Function that gets response for sources
     '''
-    sources_data=requests.get(f"https://newsapi.org/v2/top-headlines/sources?apiKey=26e92efd5ae74abf9827342828a892d9")
+    sources_data=requests.get(f"https://newsapi.org/v2/top-headlines/sources?apiKey={NEWS_API_KEY }")
     return sources_data['sources']
