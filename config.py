@@ -1,25 +1,28 @@
+from distutils.log import debug
+
+
 NEWS_API_KEY='26e92efd5ae74abf9827342828a892d9'
 class Config(object):
     SECRET_KEY = 'guess-me'
-    DEBUG = False
-    TESTING = False
+    debug = False
+    testing = False
     CSRF_ENABLED = True
 
 class ProductionConfig(Config):
-    DEBUG = False
-    MAIL_DEBUG = False
+    debug = False
+    mail_debug = False
 class StagingConfig(Config):
-    DEVELOPMENT = True
-    DEBUG = True
+    development = True
+    debug = True
 
 
 class DevelopmentConfig(Config):
-    DEVELOPMENT = True
-    DEBUG = True
+    development = True
+    debug = True
 
 
 class TestingConfig(Config):
-    TESTING = True
+    testing = True
 
 
 
