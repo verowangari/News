@@ -11,9 +11,6 @@ class Config(object):
 class ProductionConfig(Config):
     debug = False
     mail_debug = False
-class StagingConfig(Config):
-    development = True
-    debug = True
 
 
 class DevelopmentConfig(Config):
